@@ -32,8 +32,5 @@ function Install (Vue, options = {}) {
   Vue.prototype[property].options = options || {}
 }
 
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Install)
-}
 
 export default Install
